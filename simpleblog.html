@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  
+  <!-- You can change the title to whatever you want -->
+  <title>
+   My Simple Log - Bernie Michalik
+  </title>
+  
+
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <!-- These are the google fonts you use - feel free to swap these out     -->
+    <link href="http://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Cormorant+Garamond:bold" rel="stylesheet" type="text/css"/>
+
+	<!-- This is a more complex version of the font I actually use to give me the date in bold and the text unbolded.
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&amp;family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+ 	-->
+  
+  <!-- To keep it simple, I include my CSS right in the HTML file. Feel free to change out the background terrazzo image and the hero background image by going to those sites and looking for something better  -->
+  <style>
+   img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+    }
+  
+  	h1, h2, h3, h4, h5, h6 {
+    	font-family: 'Cormorant+Garamond', Georgia, Times, serif;
+	}
+	p, div {
+    	font-family: 'Proza Libre', Helvetica, Arial, sans-serif;
+	}
+	
+    body {
+      background: url(https://www.toptal.com/designers/subtlepatterns/uploads/light-grey-terrazzo.png) repeat 0 0;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+      
+      
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+      align-items: start;
+    }
+
+    .date {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .text {
+      color: #555;
+    }
+
+    .text img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+  </style>
+ </head>
+ <body>
+  <div class="hero">
+   <h1>
+    My Simple Log
+   </h1>
+  </div>
+  <div class="container">
+  
+   <!-- Each row of your blog sits within this container -->
+   
+   <!-- Here is one blog row entry. You see the date, an image, and a blog entry as a paragraph -->
+   <!-- my images tend to use a naming convention of date-number since all images go in the same bucket and I don't want to overwrite new images over old ones. -->
+   <div class="row">
+    <div class="date">
+     May 16, 2026
+    </div>
+    <div class="text">
+     <img src="20260516-1.jpeg"/>
+     <p>
+      Have started doing some drawing lately and trying out different material
+     </p>
+    </div>
+   </div>
+    
+    <!-- Here is a second entry. Note there is no image -->
+   <div class="row">
+    <div class="date">
+     May 15, 2026
+    </div>
+    <div class="text">
+     <p>
+      First entry
+     </p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

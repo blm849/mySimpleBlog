@@ -1,0 +1,1 @@
+aws s3 cp simpleblog.html s3://berniemichalik.com
